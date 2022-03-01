@@ -34,7 +34,7 @@ export const getStaticPaths = async () => {
   client.close();
 
   return {
-    fallback: false,
+    fallback: "blocking",
     // fallback set to FALSE
     // ---- means that if a user tries to access an id that doesent exists he gets a 404
     // ---- aka it means you defined ALL the supported paths here
